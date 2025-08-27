@@ -22,9 +22,9 @@ async def pisun_f6(message: message.Message):
 
 
 
-dp.chat_member(ChatMemberUpdatedFilter(IS_NOT_MEMBER >> IS_MEMBER))
+@dp.chat_member(ChatMemberUpdatedFilter(IS_NOT_MEMBER >> IS_MEMBER))
 async def zahod(event: ChatMemberUpdated, bot: Bot):
-    await event.answer(f"привет, {event.from_user.full_name}\n\n"
+    await event.answer(f"привет, <a href='{event.from_user.url}'>{event.from_user.full_name}</a>\n\n"
                        f"<i><b>правила этой параши:::</b></i>\n"
                        f"<b>1.</b> Если у тебя имеется какой то вопрос, или же ты обратился сюда по какой то проблеме, пожалуйста, "
                        f"сформулируй свое сообщение как можно граммотнее и как можно четче опиши проблему\n"
