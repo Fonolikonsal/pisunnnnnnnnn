@@ -2,8 +2,6 @@ import aiogram
 import asyncio
 import logging
 
-from libxml2 import addEncodingAlias
-
 from config import Token
 from aiogram import Dispatcher, Bot, F
 from aiogram.types import message, ChatMemberUpdated
